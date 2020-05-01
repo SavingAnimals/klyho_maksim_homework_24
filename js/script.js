@@ -126,17 +126,7 @@ function task9(e) {
 }
 
 
-function task10(e) {
-    e.preventDefault();
-    let resault9 = '';
-    for (let i = 2; i < 10; i++) {
-        for (let d = 1; d < 11; d++) {
-            resault9 += `${i} * ${d} = ${i * d} <br>`;
-        }
-        resault9 += '<br>';
-    }
-    document.getElementById('result9').innerHTML = resault9;
-}
+
 
 
 
