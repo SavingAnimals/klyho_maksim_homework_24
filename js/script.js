@@ -78,6 +78,16 @@ function task6(e) {
     }
 }
 
+function task7(e) {
+    e.preventDefault();
+    let num = prompt('Введите число');
+    let b = +prompt('На сколько сдвинуть?');
+    let a = num.substr(b); //Обрезал число в начале на указанное количество символов
+    let c = (num.substr(0, num.length - (num.length - b))); //Отрезал от числа оставшиеся символы в конце
+    resault7 = a + c; //сложил результаты наоборот
+    alert(resault7)
+}
+
 function task8(e) {
     e.preventDefault();
     let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
@@ -100,6 +110,32 @@ function task8(e) {
 
     }
 
+}
+
+
+function task9(e) {
+    e.preventDefault();
+    let resault9 = '';
+    for (let i = 2; i < 10; i++) {
+        for (let d = 1; d < 11; d++) {
+            resault9 += `${i} * ${d} = ${i * d} <br>`;
+        }
+        resault9 += '<br>';
+    }
+    document.getElementById('result9').innerHTML = resault9;
+}
+
+
+function task10(e) {
+    e.preventDefault();
+    let resault9 = '';
+    for (let i = 2; i < 10; i++) {
+        for (let d = 1; d < 11; d++) {
+            resault9 += `${i} * ${d} = ${i * d} <br>`;
+        }
+        resault9 += '<br>';
+    }
+    document.getElementById('result9').innerHTML = resault9;
 }
 
 
